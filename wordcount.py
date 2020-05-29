@@ -29,21 +29,15 @@ __author__ = "Chris Warren with help from Cheria Artis & knmarvel"
 
 import sys
 import re
-<<<<<<< HEAD
-=======
-
->>>>>>> 020b5c6fb024622e5494a40a33289359e3b4ca59
 
 def create_word_dict(filename):
     """
     Returns a word_count dict for the given file.
     """
     word_count={}
-<<<<<<< HEAD
+
     with open(filename) as f:
-=======
-    with open(filename, "r") as f:
->>>>>>> 020b5c6fb024622e5494a40a33289359e3b4ca59
+
         for line in f:
             words = line.split()
             for word in words:
@@ -53,10 +47,6 @@ def create_word_dict(filename):
                 else:
                      word_count[temp] = 1      
     return word_count
-<<<<<<< HEAD
-=======
-
->>>>>>> 020b5c6fb024622e5494a40a33289359e3b4ca59
 
 def print_words(filename):
     """
@@ -67,11 +57,6 @@ def print_words(filename):
     for each in sorted(word_dictionary):
         print(each, ":", word_dictionary[each])
     return word_dictionary
-<<<<<<< HEAD
-=======
-
-
->>>>>>> 020b5c6fb024622e5494a40a33289359e3b4ca59
 
 def print_top(filename):
     """
@@ -82,10 +67,6 @@ def print_top(filename):
     for each in top_twenty:
         print(each + ":" + str(word_dictionary[each]))
     return top_twenty
-<<<<<<< HEAD
-=======
-
->>>>>>> 020b5c6fb024622e5494a40a33289359e3b4ca59
 
 # This basic command line argument parsing code is provided and calls
 # the print_words() and print_top() functions which you must implement.
